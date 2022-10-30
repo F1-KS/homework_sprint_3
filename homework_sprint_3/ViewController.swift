@@ -22,7 +22,7 @@ class ViewController: UIViewController {
      }
 
     @IBAction func countLabelButton(_ sender: Any) /*Описываем действие при нажатии кнопки*/{
-        print("О, кто-то нажал кнопку")
+        print("О, кто-то нажал кнопку") // для проверки нажатия кнопки в консоли выводим это сообщение
         score += 1                      // при каждом нажатии на кнопку значение Label увеличивается на единицу
         labelScore.text = "\(score)" // новое значение помещается в переменную score
         }
