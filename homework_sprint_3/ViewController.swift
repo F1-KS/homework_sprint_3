@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        labelScore.text = "\(score)" // при запуске приложения устанавливаем начальное значение в Label, в нашем случае начальное значение переменной score (42)
+        labelScore.text = "\(score)" // при запуске приложения устанавливаем начальное значение в Label, в нашем случае начальное значение переменной score (42), далее при изменении score отображается новое значение
      }
 
     @IBAction func countLabelButton(_ sender: Any) /*Описываем действие при нажатии кнопки*/{
