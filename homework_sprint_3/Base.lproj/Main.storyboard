@@ -38,8 +38,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="countButton" destination="SPJ-Lc-vCC" id="Nym-ri-gL6"/>
-                        <outlet property="labelScore" destination="g2p-4a-LRb" id="w6y-3S-kex"/>
+                        <outlet property="scoreLabel" destination="g2p-4a-LRb" id="2LH-9V-3YI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

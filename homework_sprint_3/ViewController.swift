@@ -9,23 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var labelScore: UILabel!
-    @IBOutlet weak var countButton: UIButton!
-    private var score = 42 // Начальное значение счетчика 42, хотя по начальному условию требовалось начинать с 0
-
-       
-
+    @IBOutlet private weak var scoreLabel: UILabel!
+    private var score = 0 /// Устанавливаем начальное значение счетчика `0`
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        labelScore.text = "\(score)" // при запуске приложения устанавливаем начальное значение в Label, в нашем случае начальное значение переменной score (42), далее при изменении score отображается новое значение
-     }
-
-    @IBAction func countLabelButton(_ sender: Any) /*Описываем действие при нажатии кнопки*/{
-        print("О, кто-то нажал кнопку") // для проверки нажатия кнопки в консоли выводим это сообщение
-        score += 1                      // при каждом нажатии на кнопку значение Label увеличивается на единицу
-        labelScore.text = "\(score)" // новое значение помещается в переменную score
-        }
-
+        scoreLabel.text = "\(score)" /// выводим на экран значение счетчика `score` в `scoreLabel`
+    }
+    
+    @IBAction private func countLabelButton(_ sender: Any) /*Описываем действие при нажатии кнопки*/{
+        print("О, кто-то нажал кнопку") /// для проверки нажатия кнопки в консоли выводим это сообщение
+        score += 1                      /// при каждом нажатии на кнопку значение в `scoreLabel` увеличивается на единицу
+        scoreLabel.text = "\(score)" /// новое значение помещается в переменную счетчика `score`
+    }
+    
 }
-
+///``Большое спасибо за ``control + i``  !!!
